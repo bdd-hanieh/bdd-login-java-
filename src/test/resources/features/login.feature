@@ -1,0 +1,11 @@
+Feature: Login functionality
+
+  Scenario: Successful login
+    Given I open the login page
+    When I enter valid username and password
+    Then I should see the welcome message
+
+  Scenario: Failed login
+    Given I open the login page
+    When I enter invalid username or password
+    Then I should see an error message
