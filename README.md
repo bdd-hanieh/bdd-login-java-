@@ -1,27 +1,17 @@
-Login Feature Test
+### Login Feature Test  
 
+Tests login scenarios using Cucumber (BDD) and JUnit.  
 
-Tests the login function using Cucumber (BDD) and JUnit.
+**Description:**  
+Checks login behavior for valid and invalid credentials.  
+Valid → shows welcome message  
+Invalid → shows error message  
 
-Description:
-Simulates opening the login page, entering valid or invalid credentials, and checking the result.
+**Example:**  
+✅ **Valid Login**  
+Input → valid username/password  
+Output → Welcome message displayed ✅  
 
-Valid login → shows welcome message
-
-Invalid login → shows error message
-
-Example:
-✅ Valid Login
-Given I open the login page  
-When I enter valid username and password  
-Then I should see the welcome message
-Output → Welcome message displayed ✅
-
-❌ Invalid Login
-
-pgsql
-Copy code
-Given I open the login page  
-When I enter invalid username or password  
-Then I should see an error message
+❌ **Invalid Login**  
+Input → invalid username/password  
 Output → Error message displayed ❌
